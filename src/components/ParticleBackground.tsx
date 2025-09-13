@@ -38,7 +38,9 @@ export const ParticleBackground = () => {
             enable: true,
             mode: "repulse",
           },
-          resize: true,
+          resize: {
+            enable: true,
+          },
         },
         modes: {
           push: {
@@ -60,10 +62,6 @@ export const ParticleBackground = () => {
           enable: true,
           opacity: 0.08,
           width: 1,
-          triangles: {
-            enable: true,
-            opacity: 0.02,
-          },
         },
         move: {
           direction: "none",
@@ -74,11 +72,6 @@ export const ParticleBackground = () => {
           random: true,
           speed: 0.8,
           straight: false,
-          attract: {
-            enable: false,
-            rotateX: 600,
-            rotateY: 1200,
-          },
         },
         number: {
           density: {
@@ -98,7 +91,7 @@ export const ParticleBackground = () => {
           },
         },
         shape: {
-          type: ["circle", "triangle"],
+          type: "circle",
         },
         size: {
           value: { min: 1, max: 4 },
@@ -110,35 +103,8 @@ export const ParticleBackground = () => {
             sync: false,
           },
         },
-        twinkle: {
-          particles: {
-            enable: true,
-            frequency: 0.05,
-            opacity: 1,
-          },
-        },
       },
       detectRetina: true,
-      smooth: true,
-      style: {
-        position: "fixed",
-      },
-      themes: [
-        {
-          name: "light",
-          default: {
-            value: false,
-            mode: "light",
-          },
-          options: {
-            particles: {
-              color: {
-                value: ["#1f2937", "#374151", "#4b5563"],
-              },
-            },
-          },
-        },
-      ],
     }),
     [],
   );
