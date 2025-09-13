@@ -519,7 +519,7 @@ export default function Home() {
               
               <motion.a 
                 variants={fadeInUp}
-                href="mailto:yash@example.com" 
+                href="mailto:yashtiwari9182@gmail.com" 
                 whileHover={{ scale: 1.05, y: -5 }}
                 whileTap={{ scale: 0.95 }}
                 className="group inline-flex items-center px-10 py-6 bg-gradient-to-r from-green-600 to-green-700 rounded-full text-xl font-bold hover:from-green-500 hover:to-green-600 transition-all duration-300 shadow-2xl hover:shadow-green-600/25 border border-green-500 hover:border-green-400"
